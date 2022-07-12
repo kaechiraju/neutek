@@ -1,9 +1,10 @@
 package demo.javamain;
 
 import demo.utils.DataUtlis;
+
 import java.util.Scanner;
 
-public class NeutekEntryPoint {
+public class StaticFeildsAndMethodExample {
 
     public static void main(String[] stringArr)
     {
@@ -11,11 +12,11 @@ public class NeutekEntryPoint {
 //        testingScannerFunctionality();
 
 
-        dataExample();
+        dateExample();
 
     }
 
-    private static void dataExample() {
+    private static void dateExample() {
 
         String nonStaticDateString = DataUtlis.getNonStaticDateString();
         String staticDateString = DataUtlis.getStaticDateString();
@@ -37,9 +38,7 @@ public class NeutekEntryPoint {
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.print(scanner.next() +" ");
-     } while (scanner.hasNext()) {
-
-        }
+     } while (scanner.hasNext()) ;
     }
 
     private static void testingMainArguments(String[] stringArr) {

@@ -40,9 +40,15 @@ public class SuperClass {
 
 
     public int sum( ){
-        System.out.println("Method i super class is called .");
+        System.out.println("Calling sum() method in super class .....");
         return 0;
     }
+
+
+/*  @Override
+   public String toString(){
+        return "X: "+ x +" Y: "+ y+" Z: "+z+" A: "+ a +" B: "+ b+" C: "+c;
+    } */
 
 
 

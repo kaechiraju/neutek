@@ -34,7 +34,13 @@ public class SubClass extends SuperClass{
 
     @Override
     public int sum( ){
-        return x+y+z;
+        return x+y+z+a+b+c;
+    }
+
+
+    @Override
+    public String toString(){
+        return "X= "+ x +" Y= "+ y+" Z= "+z+" \nA= "+ a +" B= "+ b+" C= "+c;
     }
 
 

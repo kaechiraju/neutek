@@ -50,9 +50,13 @@ public class SuperClass {
         return "X: "+ x +" Y: "+ y+" Z: "+z+" A: "+ a +" B: "+ b+" C: "+c;
     } */
 
+ private int diff(){
+     return -1;
+ }
 
 
-
-
+    protected int multiple(){
+        return -1;
+    }
 
 }

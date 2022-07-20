@@ -3,17 +3,30 @@ package demo.helper;
 public abstract class Car {
 
     public static final int NUMBER_OF_TIERS = 4;
-    String Maker;
-    String Model;
+    public  String  maker = "Anonamous";
+
+
+    String model;
     String colour;
     String year;
 
 
-    public Car() {
+//    public Car() {
+//    }
+
+
+    public Car(String maker, String model, String colour,  String year) {
+        this.maker =maker;
+        this.colour=colour;
+        this.year=year;
+        this.model=model;
     }
 
+    public Car( String model, String colour,  String year) {
 
-    public Car(String Maker, String Model, String colour,  String year) {
+        this.colour=colour;
+        this.year=year;
+        this.model=model;
     }
 
 
@@ -21,7 +34,7 @@ public abstract class Car {
         return true;
     }
 
-    public int nuberTiers(){
+    public int numberTiers(){
         return NUMBER_OF_TIERS;
     }
 
@@ -31,13 +44,15 @@ public abstract class Car {
 
     public abstract boolean isAWD();
 
+    public abstract boolean hasAutoCurise();
+
 
     public String getMaker() {
-        return Maker;
+        return maker;
     }
 
     public String getModel() {
-        return Model;
+        return model;
     }
 
     public String getColour() {
@@ -50,11 +65,11 @@ public abstract class Car {
 
 
     public void setMaker(String maker) {
-        Maker = maker;
+        this.maker = maker;
     }
 
     public void setModel(String model) {
-        Model = model;
+        this.model = model;
     }
 
     public void setColour(String colour) {

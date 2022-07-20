@@ -1,21 +1,19 @@
 package demo.helper;
 
-public class Tesla extends Car{
+public class Bmw extends Car{
 
-    public Tesla(String maker, String model, String colour, String year) {
+    public Bmw(String maker, String model, String colour, String year) {
         super(maker, model, colour, year);
     }
 
-    public Tesla(  String model, String colour, String year) {
-        super( "TESLA", model, colour, year);
-     }
-
-
-
+    public Bmw( String model, String colour, String year) {
+        super( model, colour, year);
+        this.maker="BMW";
+    }
 
     @Override
     public String getType() {
-        return "ELECTRICAL";
+        return "GAS";
     }
 
     @Override
@@ -30,6 +28,6 @@ public class Tesla extends Car{
 
     @Override
     public boolean hasAutoCurise() {
-        return false;
+        return true;
     }
 }

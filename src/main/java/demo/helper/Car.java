@@ -80,5 +80,21 @@ public abstract class Car {
         this.year = year;
     }
 
+    @Override
+    public String toString(){
+
+        StringBuffer sb= new StringBuffer();
+
+        sb.append("\n==========maker: "+ maker+ " model :"+ model + " colour :"+ colour  +" year:" +year +"===========");
+
+        sb.append("\n"+ "hasHeadLights : "+ hasHeadLights() + " numberTiers :"+ numberTiers() );
+
+        sb.append("\n"+ "getType : "+ getType() + " driveMode :"+ numberTiers() + " driveMode : "+driveMode() +" isAWD: "+isAWD() + " hasAutoCurise "+ hasAutoCurise() );
+
+        sb.append("\n==================================================================================================");
+
+        return sb.toString();
+    }
+
 
 }

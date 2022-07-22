@@ -14,4 +14,7 @@ public abstract class  Truck extends Car{
         return this instanceof Truck;
     }
 
+
+
+
 }

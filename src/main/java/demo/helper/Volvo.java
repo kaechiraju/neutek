@@ -29,4 +29,10 @@ public class Volvo extends Truck{
     public boolean doesHaveSleepBin(){
          return true;
     }
+
+
+    @Override
+    public String toString(){
+     return    super.toString()+ "\n======Additional Values from toString in volov =====\ndoesHaveSleepBin : "+ doesHaveSleepBin() + " isATruck : "+isATruck();
+    }
 }

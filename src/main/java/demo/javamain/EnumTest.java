@@ -10,7 +10,11 @@ public class EnumTest {
     }
 
     public void tellItLikeItIs() {
-        switch (day) {
+        tellWhichDay(day);
+    }
+
+    public static void tellWhichDay(Day thisDay) {
+        switch (thisDay) {
             case MONDAY:
                 System.out.println("Mondays are bad.");
                 break;
@@ -40,5 +44,14 @@ public class EnumTest {
         sixthDay.tellItLikeItIs();
         EnumTest seventhDay = new EnumTest(Day.SUNDAY);
         seventhDay.tellItLikeItIs();
+
+        System.out.println("============");
+
+        tellWhichDay(Day.MONDAY);
+        tellWhichDay(Day.WEDNESDAY);
+        tellWhichDay(Day.FRIDAY);
+        tellWhichDay(Day.SATURDAY);
+        tellWhichDay(Day.SUNDAY);
+
     }
 }

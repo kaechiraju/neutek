@@ -75,5 +75,9 @@ public class AbstarctTestMain {
         System.out.println( "truck --> "+ truck );
         System.out.println( "volvo --> "+ volvo );
 
+
+        //System.out.println( "truck.NUMBER_OF_TIERS --> "+ truck.NUMBER_OF_TIERS);  ERROR --> 'NUMBER_OF_TIERS' has protected access in 'demo.helper.Car'
+        System.out.println( "truck.numberTiers() --> "+ truck.numberTiers());
+
     }
 }

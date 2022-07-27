@@ -2,7 +2,10 @@ package demo.helper;
 
 public abstract class Car {
 
-    public static final int NUMBER_OF_TIERS = 4;
+    //SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY  //Cannot resolve symbol 'TUESDAY'
+
+
+    protected static final int NUMBER_OF_TIERS = 4;
     public  String  maker = "Anonamous";
 
 

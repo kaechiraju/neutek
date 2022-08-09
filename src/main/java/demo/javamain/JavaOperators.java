@@ -55,49 +55,52 @@ public class JavaOperators {
         boolean b1 = true;
         boolean b2 = true;
         boolean b3 = false;
+        //
+        System.out.println("b1&&b2 --> "+ (b1&&b2));
         System.out.println("b1&&b2 --> "+ (b1&&b2));
         System.out.println("b1&&b3 --> "+ (b1&&b3));
         System.out.println("b1||b3 --> " + (b1||b3));
         System.out.println("!b3 --> " +!b3);
 
-        int i=10;
-        String iStr= "10";
-        int y =10;
-        String yStr="20";
 
-        System.out.println("i==y | iStr.equals(yStr) --> "+  (i==y | iStr.equals(yStr)));
 
-        System.out.println("i==y || iStr.equals(yStr) --> "+  (i==y || iStr.equals(yStr)));
 
-        System.out.println("i==y & iStr.equals(yStr) --> "+  (i==y &  iStr.equals(yStr)));
+        int num3 = 30;
 
-        System.out.println("i==y &&  iStr.equals(yStr) --> "+  (i==y  && iStr.equals(yStr)));
+        // find the largest number
+        // using && operator
+        if (num1 >= num2 && num1 >= num3){
+            System.out.println(num1 + " is the largest number.");
+        } else if (num2 >= num1 && num2 >= num3) {
+            System.out.println(num2 + " is the largest number.");
+        }else{
+            System.out.println(num3 + " is the largest number.");
+        }
+
+
+//TODO:   Show Diff in | VS  ||   and & vs &&
+        //  with & and ¦ both operands are always evaluated.
+        System.out.println(" ======== int num1 = "+num1  +" int num2 = "+num2+" =============   ");
+        System.out.println("With & and ¦ both operands are always evaluated");
+        System.out.println("(num1 != num2 | (num1-num2 == 0)--> "+  (num1!=num2 | (num1-num2==0)));
+        System.out.println("(num1 != num2 & (num1-num2 == 0) --> "+  (num1!=num2 & (num1-num2==0)));
+        System.out.println("(num1 == num2 | (num1-num2 != 0) --> "+  (num1==num2 | (num1-num2!=0)));
+        System.out.println("(num1 == num2 & (num1-num2 != 0) --> "+  (num1==num2 & (num1-num2!=0)));
+
+        //With && and ¦¦ the second operand is only evaluated when it is necessary.
+        System.out.println("With && and ¦¦ the second operand is only evaluated when it is necessary.");
+
+        System.out.println("(num1 != num2 || (num1-num2 == 0)--> "+  (num1!=num2 || (num1-num2==0)));
+        System.out.println("(num1 != num2 && (num1-num2 == 0) --> "+  (num1!=num2 && (num1-num2==0)));
+        System.out.println("(num1 == num2 || (num1-num2 != 0) --> "+  (num1==num2 || (num1-num2!=0)));
+        System.out.println("(num1 == num2 && (num1-num2 != 0) --> "+  (num1==num2 && (num1-num2!=0)));
 
         System.out.println("******************" );
-
-        System.out.println("iStr.equals(yStr) | i==y  --> "+  (iStr.equals(yStr) | i==y  ));
-
-        System.out.println("iStr.equals(yStr) || i==y  --> "+  (iStr.equals(yStr) || i==y ));
-
-        System.out.println("iStr.equals(yStr) & i==y  --> "+  (iStr.equals(yStr) & i==y ));
-
-        System.out.println("iStr.equals(yStr)  && i==y --> "+  (iStr.equals(yStr)  && i==y));
-
-
-        System.out.println("(negation operator ) !iStr.equals(yStr)  && i==y --> "+  !(iStr.equals(yStr)  && i==y));
-
-
-
-
-
-
-
-        System.out.println("b1&&b2 --> "+ (b1&&b2));
 
 
 
         System.out.println("\n*** 5) Comparison (Relational) Operators ***");
-        int num3 = 10;
+
         int num4 = 20;
         System.out.println(num3 == num4); // # diff "==" and  "equal"
         System.out.println(num3 != num4);

@@ -44,8 +44,11 @@ public class SringMain {
         String s6= new String("kiran");
         String s7="kiran";
         String s8= new String("kiran");
+        StringBuffer sb1= new StringBuffer();
+         sb1.append("kiran");
 
-        System.out.println("Example 2:   s5: " +s5 +" s6: "+ s6 + " s7 : "+ s7 +" s8"+ s8  );
+
+        System.out.println("Example 2:   s5: " +s5 +" s6: "+ s6 + " s7 : "+ s7 +" s8"+ s8  + "sb1" +sb1.toString());
         System.out.println("s5 == s7 " +(s5 == s7));
         System.out.println("s6 == s8 " +(s6 == s8 ));
         System.out.println("s5 == s8 " +(s5 == s8 ));
@@ -53,7 +56,7 @@ public class SringMain {
         System.out.println("s5 == s6 " +(s5 == s6 ));
         System.out.println("s7 == s8 " +(s7 == s8   ));
         System.out.println("s5.hashCode " +s5.hashCode() + "\ns6.hashCode " +s6.hashCode() + "\ns7.hashCode " +s7.hashCode() + "\ns8.hashCode " +s8.hashCode() );
-        System.out.println("s5.identityHashCode --> String s5= \"kiran\" " +System.identityHashCode(s5) + "\ns6.identityHashCode --> String s6= new String(\"kiran\") " +System.identityHashCode(s6) + "\ns7.identityHashCode --> String s7= \"kiran\" " +System.identityHashCode(s7) + "\ns8.identityHashCode --> String s8= new String(\"kiran\") " +System.identityHashCode(s8) );
+        System.out.println("s5.identityHashCode --> String s5= \"kiran\" " +System.identityHashCode(s5) + "\ns6.identityHashCode --> String s6= new String(\"kiran\") " +System.identityHashCode(s6) + "\ns7.identityHashCode --> String s7= \"kiran\" " +System.identityHashCode(s7) + "\ns8.identityHashCode --> String s8= new String(\"kiran\") " +System.identityHashCode(s8) + "\ns8.identityHashCode --> String sb1= new StringBuffer();sb1.append(\"kiran\"); " +System.identityHashCode(sb1));
         System.out.println(
                 " s5.equals('kiran') " + s5.equals("kiran") +
                         "\n'kiran'.equals(s5) " + "kiran".equals("kiran") +
@@ -61,6 +64,8 @@ public class SringMain {
                         "\n s7.equals(s8) " + s7.equals(s8)  +
                         "\n s5.equals(s7) " +s5.equals(s7)  +
                         "\n s6.equals(s8) "+ s6.equals(s8) );
+
+
 
 
     }

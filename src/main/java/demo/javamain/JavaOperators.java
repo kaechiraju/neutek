@@ -109,6 +109,11 @@ public class JavaOperators {
         System.out.println(num3 < num4);
         System.out.println(num3 <= num4);
 
+        System.out.println("Checking bit operators 1<1 :" + (1<1));
+        System.out.println("Checking bit operators 1<=1 :" + (1<=1));
+        System.out.println("Checking bit operators 1>1 :" + (1>1));
+        System.out.println("Checking bit operators 1>=1 :" + (1>=1));
+
         System.out.println("\n*** 6) Bitwise Operators ***");
         int num5 = 11; /* 11 = 00001011 */
         int num6 = 22; /* 22 = 00010110 */
